@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make A Responsive Carousel using SwiperJS and Flexbox - ByteWebster</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--one" data-content="Texto del modal para Mercedes A Flores Moreno">
+        <span>Proyect Manager</span>
+        <div>
+          <h2>Mercedes A Flores Moreno</h2>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--two" data-content="Texto del modal para Mario F Landa Lopez">
+        <span>QA</span>
+        <div>
+          <h2>Mario F Landa Lopez</h2>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--three" data-content="Texto del modal para Alfonso R Moha Pacheco">
+        <span>Frontend</span>
+        <div>
+          <h2>Alfonso R Moha Pacheco</h2>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--four" data-content="Texto del modal para Valentina Ramirez Lopez">
+        <span>Frontend</span>
+        <div>
+          <h2>Valentina Ramirez Lopez</h2>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--five" data-content="Texto del modal para Arturo Perez Kantun">
+        <span>Backend</span>
+        <div>
+          <h2>Arturo Perez Kantun</h2>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--six" data-content="Texto del modal para Armando L Tun Hernandez">
+        <span>Backend</span>
+        <div>
+          <h2>Armando L Tun Hernandez</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
