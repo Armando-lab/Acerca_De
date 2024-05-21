@@ -21,6 +21,7 @@ var swiper = new Swiper(".swiper", {
 // Modal functionality
 var modal = document.getElementById("modal");
 var modalText = document.getElementById("modal-text");
+var closeModal = document.getElementsByClassName("close")[0];
 
 // Open modal when clicking on a slide
 document.querySelectorAll(".swiper-slide").forEach(function(slide) {
@@ -29,6 +30,11 @@ document.querySelectorAll(".swiper-slide").forEach(function(slide) {
     modalText.textContent = content;
     modal.style.display = "block";
   });
+});
+
+// Close modal when clicking on the close button
+closeModal.addEventListener("click", function() {
+  modal.style.display = "none";
 });
 
 // Close modal when clicking outside of the modal content
