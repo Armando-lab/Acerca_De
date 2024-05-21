@@ -116,7 +116,7 @@ section {
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/Yedi")
+    url("image/Yedi.png")
       no-repeat 50% 50% / cover;
 }
 
