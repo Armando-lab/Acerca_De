@@ -85,6 +85,13 @@
       clickable: true
     }
   });
+
+  // Voltear las tarjetas al hacer clic
+  document.querySelectorAll(".swiper-slide").forEach(function(slide) {
+    slide.addEventListener("click", function() {
+      this.classList.toggle("flipped");
+    });
+  });
 </script>
 </body>
 </html>

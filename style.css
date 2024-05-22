@@ -13,7 +13,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90%);
   overflow: hidden;
 }
 
@@ -27,21 +27,22 @@ section {
   width: 300px;
   height: 400px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-  filter: blur(1px);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: self-start;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
 .swiper-slide-active {
   filter: blur(0px);
 }
 
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
-  background: #fff;
+.swiper-slide.flipped {
+  transform: rotateY(180deg);
 }
 
 .swiper-slide span {
@@ -99,44 +100,30 @@ section {
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url(image/Meci.jpeg)
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(image/Meci.jpeg) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/Mario.jpeg")
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/Mario.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/Yedi.jpeg")
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/Yedi.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/Vele.jpeg")
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/Vele.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/APK.jpeg")
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/APK.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--six {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("image/Arm.jpg")
-      no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/Arm.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
-
-/* Resto del CSS ... */
